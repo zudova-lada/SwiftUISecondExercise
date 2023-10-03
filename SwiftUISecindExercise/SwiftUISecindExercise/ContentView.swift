@@ -12,14 +12,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                Text("Да будет свет сказал электрик")
-                    .font(.title)
-                    .foregroundColor(.blue)
-                Text("и перерезал провода")
-                    .font(.footnote)
-                    .foregroundColor(.pink)
-            }
+            Text("Марафон \(Text("по SwiftUI").bold()) \(Text("Отцовский пинок").font(.largeTitle).foregroundColor(.pink))")
+                .font(.footnote)
+                .foregroundColor(.blue)
                 .frame(width: CGFloat(sliderValue), height: .infinity, alignment: .center)
                 .overlay {
                     RoundedRectangle(cornerRadius: 5)
